@@ -1,0 +1,331 @@
+@use "vars";
+@use "sobrenosotros";
+@use "footer";
+@use "header";
+@use "login";
+@use "fichaproducto";
+@use "contactanos";
+@use "register";
+@use "offcanvas";
+
+
+* {
+    --outline: 1px solid red;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-weight: bold;
+    color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 100px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 3px vars.$color_violeta;
+    background-color: #ffffff;
+ 
+}
+
+button:hover {
+    box-shadow: 5px 5px 3px #ffffff;
+   background-color: #6f00ff;
+   
+transition: 0.19s;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+.color-acento {
+    color: vars.$color_violeta;
+}
+
+
+
+section#hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+background-color: vars.$color_negro;
+h2{padding: 20px 20px;
+}
+    align-items: center;
+  padding: 20px;
+
+
+
+    h1 {
+        color: vars.$color_blanco;
+
+        text-shadow: 5px 5px 2px vars.$color_violeta;
+        margin: 0;
+    }
+
+    h2 {
+        color: white;
+       
+
+    }
+
+    p {
+        color: vars.$color_violeta;
+
+    }
+
+    &.dispo p:hover {
+        color: vars.$color_violeta;
+        text-shadow: black 5px 4px 5px;
+        transition: 0.1s;
+    }
+
+    p img {
+        color: vars.$color_violeta;
+        max-width: 1.5em;
+        min-height: 1.5em;
+    }
+
+  
+
+    &.dispo {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+   button {
+    font-size: 1.50em;
+
+   }
+}
+
+#somos-proya {
+    height: 70vh;
+   
+    
+    
+}
+
+#somos-proya .container {
+    text-align: center;
+    
+}
+
+#nuestros-programas {
+    color: white;
+    text-align: center;
+
+
+ &.container {
+    padding: 150px 12px;
+}
+
+}
+#nuestros-programas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+
+
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: vars.$color_negro;
+    height: 80vh;
+    background-color: rgb(234, 233, 233);
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+    color: vars.$color_negro;
+}
+#final button:hover{
+    
+    color: vars.$color_blanco;
+}
+
+
+@media (min-width: 850px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    #somos-proya .texto p{
+        font-size: 1.8em;
+    } 
+    #somos-proya h2 {
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container {
+        background-image:  url("imgCss/1.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        
+    }
+
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p {
+        display: block;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #nuestros-programas h2 {
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3 {
+        margin-top: 0;
+        color: white;
+    }
+
+  
+
+   section#caracteristicas{
+        height: 100vh;
+        background-image: url(imgCss/Marketing.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: #484747;
+        background-blend-mode: overlay;
+        height: 90vh;
+       
+      
+    }
+
+    #caracteristicas .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h2 {
+        margin: 0;
+        color: white;
+        font-size: 4em;
+        text-shadow: 1px 1px 2px #000000;
+      }
+      blockquote{
+        color: white;
+        font-size: 0.3em;
+        text-align: end;
+          }
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+  
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}

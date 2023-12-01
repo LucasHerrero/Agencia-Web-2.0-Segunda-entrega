@@ -1,0 +1,254 @@
+#nuestros-programas {
+
+    
+    a { cursor: pointer; }
+    .btn
+    {
+      width: 200px;
+      height: 50px;
+      
+      color: rgba(255, 255, 255, 0.9);
+      
+      font-size: 1.05em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 50px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: solid white;
+      background: transparent;
+      
+      border-radius: 25px;
+      
+      
+      display: inline-block;
+    
+    }
+    .btn:hover{
+        
+        background-color: #8d5acf;
+
+   }
+    
+    .btnPos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top:80px ;
+    }
+    .btnPos2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top:60px ;
+    }
+    .btnPos3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    
+    }
+
+.carta1 {
+        p{text-shadow: 2px 2px 6px black;}
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    
+        width: 450px;
+        height: 520px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+       
+    }
+    .carta2 {
+        p{text-shadow: 2px 2px 6px black;}
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+       
+        
+        width: 450px;
+        height: 520px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+       
+    }
+    .carta3 {
+
+        h3{
+            padding-top: 20px;
+        }
+        p{text-shadow: 2px 2px 6px black;}
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+     
+        width: 450px;
+        height: 520px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+       
+    }
+}
+
+#nuestros-programas {
+    .carta1 {
+        h4{
+            text-shadow: 3px 3px 6px white;
+            padding: 30px;
+            font-weight: bold;
+            font-size: 2em;
+           }
+    padding: 50px;
+    h3{
+        color: black;
+        text-shadow: 2px 2px 6px white;
+    }
+    background-image: linear-gradient(120deg, #6517ca, #6a4b92);
+            color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    .carta2 {
+        padding: 50px;
+        h3{
+        color: black;
+        text-shadow: 2px 2px 6px white;
+    }
+    h4{
+        text-shadow: 3px 3px 6px white;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 2em;
+       }
+        background-image: linear-gradient(120deg, rgb(12, 181, 88), #6a4b92);
+                color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }   
+    .carta3 {
+        h4{
+            text-shadow: 3px 3px 6px white;
+            padding: 30px;
+            font-weight: bold;
+            font-size: 2em;
+           }
+        padding: 50px;
+    h3{
+        color: black;
+        text-shadow: 2px 2px 6px white;
+    }
+        background-image: linear-gradient(120deg, #ffea00, #6a4b92);
+                color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+.carta{
+    ul {
+        li{
+            text-align: start;
+            
+        }
+    }
+}
+
+section#comparative-table{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+    div.Table{
+ margin: 180px;
+        border: 26px solid #ffffff;
+        table{
+           
+          
+            padding: 20px;
+            border: 2px solid black;
+       
+td{
+    img.Icon{
+        width: 50px;
+    }
+  
+}
+
+       th, td,tr{
+            border: 3px solid #ffffffd0;
+                        padding: 30px;
+font-size: 1.10em;
+text-align: center;
+        }
+      
+        border-collapse: collapse;
+    }
+
+    .titcol{
+        background-image: linear-gradient(120deg, #000000, #6517ca);
+        color: white;
+    }
+    .basico{
+        background-image: linear-gradient(120deg, #6517ca, #6a4b92);
+        color: white;
+    }
+    .medio{
+        background-image: linear-gradient(120deg, rgb(12, 181, 88), #6a4b92);
+        color: white;
+    }
+    .premiun{
+        background-image: linear-gradient(120deg, #ffea00, #6a4b92);
+        color: white;
+    }
+    tr.precio{
+height: 200px;
+        .BtnCompraFinal{
+            background-color: transparent;
+            border: 2px solid white;
+            box-shadow: none;
+         
+            margin-top: 40px;
+            color: white;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #ffffff5a;
+               
+                color: #000000;
+          
+              
+            }
+        }
+
+     
+    }
+    }
+    min-height: 80vh;
+
+
+}

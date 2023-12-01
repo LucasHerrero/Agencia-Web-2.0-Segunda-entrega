@@ -1,0 +1,136 @@
+@use "vars";
+
+#loginHeader{
+
+    z-index: 9;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+        a:has(img){
+            img{
+                width: 150px;
+            }
+        }
+    }
+    #loginB{
+      
+        margin: 0;
+        background-image: url("imgCss/pexels.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+       main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       
+    }
+ 
+    div#login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      text-align: center;
+        margin: 30px 0px;
+        padding: 10px 0px;
+        min-height: 70vh;
+        min-width: 50vh;
+        max-width: 50vh;
+        
+    .inputBox{
+        padding: 10px 0px;
+        label{
+        text-align: left;
+       }
+    }
+    #sumbitBtn{
+    
+        padding: 30px;
+}
+  
+    background-size: auto;
+    backdrop-filter: blur(10px);
+
+   
+    border: 3px;
+    border-style: inset;
+    border-color: #6517ca;
+    border-radius: 1rem;
+
+
+    
+}
+
+
+        #h2Inicio{
+        h2{
+            margin: 0;
+            padding-bottom: 70px;
+        }
+       
+
+        
+    }
+
+
+        h2{
+            color: #6f00ff;
+            text-shadow: 2px 2px 2px black;
+            
+
+        }
+        #h2Inicio{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+     
+
+    
+        form {
+
+            
+      
+                label {
+                    margin: 2rem 3rem 0.5rem 3rem;
+                    
+                    color: #6517ca;
+                   text-shadow: 2px 0px 1px #ffffff;
+                }
+    
+                input {
+                    background-color: #6517ca81;
+                    
+                    margin: 0rem 3rem 0 3rem;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    &:focus {
+                        background-color: #6517ca;
+                    }
+                    &#submit {
+                     
+                    
+                      .checkboxDiv{
+                      display: flex;
+                      margin: 0;
+                        justify-content: space-around;
+                       
+                        }
+
+                    }
+                      
+                    }
+
+                }
+                    a{
+                        margin: 10px;
+                    }
+           
+            
+    
+    
