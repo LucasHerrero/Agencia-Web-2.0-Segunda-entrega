@@ -1,0 +1,85 @@
+@use "vars";
+main#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+height: 100vh;
+
+    table#dailies,tr,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+    
+    }
+    table#dailies{
+        background-color: #a0a0a062;
+   
+    }
+    table#dailies:has(a.editEntry) img{
+width: 40px;
+    }
+    table#dailies:has(a.deleteEntry) img{
+        width: 40px;
+
+    }
+
+
+    div#editModal {
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    form.editActivity {
+        max-width: 400px;
+        margin: 7% auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: vars.$color_blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            background-color: vars.$color_verde_oscuro;
+            color: vars.$color_blanco;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: vars.$color_negro;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background-color: vars.$color_verde_claro;
+            color: vars.$color_blanco;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+
+            &:hover {
+                background-color: vars.$color_verde_oscuro;
+            }
+        }
+
+    }
+
+}

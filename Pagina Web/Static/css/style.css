@@ -438,17 +438,29 @@ section#comparative-table div.Table .titcol {
   background-image: linear-gradient(120deg, #000000, #6517ca);
   color: white;
 }
+section#comparative-table div.Table .titcol span {
+  color: #ffea00;
+}
 section#comparative-table div.Table .basico {
   background-image: linear-gradient(120deg, #6517ca, #6a4b92);
   color: white;
+}
+section#comparative-table div.Table .basico span {
+  color: #ffea00;
 }
 section#comparative-table div.Table .medio {
   background-image: linear-gradient(120deg, rgb(12, 181, 88), #6a4b92);
   color: white;
 }
+section#comparative-table div.Table .medio span {
+  color: #ffea00;
+}
 section#comparative-table div.Table .premiun {
   background-image: linear-gradient(120deg, #ffea00, #6a4b92);
   color: white;
+}
+section#comparative-table div.Table .premiun span {
+  color: #ffea00;
 }
 section#comparative-table div.Table tr.precio {
   height: 200px;
@@ -466,18 +478,6 @@ section#comparative-table div.Table tr.precio .BtnCompraFinal:hover {
   color: #000000;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:focus {
-  outline: none;
-  color: black !important;
-  font-weight: bold !important;
-}
-
 .form_wrap {
   width: 1050px;
   height: 530px;
@@ -488,8 +488,17 @@ section#comparative-table div.Table tr.precio .BtnCompraFinal:hover {
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-
-.cantact_info::before {
+.form_wrap * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form_wrap :focus {
+  outline: none;
+  color: black !important;
+  font-weight: bold !important;
+}
+.form_wrap .cantact_info::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -499,8 +508,7 @@ section#comparative-table div.Table tr.precio .BtnCompraFinal:hover {
   background: #6517ca;
   opacity: 0.9;
 }
-
-.cantact_info {
+.form_wrap .cantact_info {
   width: 38%;
   position: relative;
   display: flex;
@@ -508,40 +516,35 @@ section#comparative-table div.Table tr.precio .BtnCompraFinal:hover {
   align-items: center;
   justify-content: center;
 }
-
-.info_title,
-.info_items {
+.form_wrap .info_title,
+.form_wrap .info_items {
   position: relative;
   z-index: 2;
   color: #fff;
 }
-.info_title .txt1:has(iframe),
-.info_items .txt1:has(iframe) {
+.form_wrap .info_title .txt1:has(iframe),
+.form_wrap .info_items .txt1:has(iframe) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.info_title {
+.form_wrap .info_title {
   margin-bottom: 60px;
 }
-
-.info_title span {
+.form_wrap .info_title span {
   font-size: 100px;
   display: block;
   text-align: center;
   margin-bottom: 15px;
 }
-
-.info_title h2 {
+.form_wrap .info_title h2 {
   font-size: 35px;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 6px black;
 }
-
-.info_items p {
+.form_wrap .info_items p {
   color: white;
   text-shadow: 2px 2px 6px black;
   display: flex;
@@ -553,19 +556,16 @@ section#comparative-table div.Table tr.precio .BtnCompraFinal:hover {
   margin-left: 15px;
   margin-bottom: 10px;
 }
-
-.info_items p:nth-child(1) span {
+.form_wrap .info_items p:nth-child(1) span {
   font-size: 30px;
   margin-right: 10px;
 }
-
-.info_items p:nth-child(2) span {
+.form_wrap .info_items p:nth-child(2) span {
   font-size: 50px;
   margin-right: 15px;
   margin-left: 4px;
 }
-
-form.form_contact {
+.form_wrap form.form_contact {
   width: 70%;
   padding: 30px 40px;
   display: flex;
@@ -575,24 +575,21 @@ form.form_contact {
   color: black;
   max-width: 600px;
 }
-form.form_contact .mensaje {
+.form_wrap form.form_contact .mensaje {
   padding-left: 40px;
 }
-
-form.form_contact h2 {
+.form_wrap form.form_contact h2 {
   font-size: 25px;
   font-weight: 600;
   color: #303030;
   margin-bottom: 30px;
   text-shadow: none;
 }
-
-form.form_contact label {
+.form_wrap form.form_contact label {
   font-weight: 600px;
 }
-
-form.form_contact input,
-form.form_contact textarea {
+.form_wrap form.form_contact input,
+.form_wrap form.form_contact textarea {
   width: 100%;
   padding: 8px 0px 5px;
   margin-bottom: 20px;
@@ -602,13 +599,11 @@ form.form_contact textarea {
   font-size: 14px;
   font-weight: 400;
 }
-
-form.form_contact textarea {
+.form_wrap form.form_contact textarea {
   max-width: 80%;
   min-width: 80%;
 }
-
-form.form_contact input[type=button] {
+.form_wrap form.form_contact input[type=button] {
   width: 180px;
   background: #6517ca;
   padding: 10px;
@@ -620,8 +615,7 @@ form.form_contact input[type=button] {
   font-weight: 600;
   cursor: pointer;
 }
-
-form.form_contact input[type=button]:hover {
+.form_wrap form.form_contact input[type=button]:hover {
   background: #141414;
 }
 
@@ -758,6 +752,87 @@ nav.offcanvas a {
 
 nav.offcanvas.reveal {
   margin-left: 0;
+}
+
+#formVentas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  height: 120vh;
+  background-image: url(imgCss/Marketing.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #484747;
+  background-blend-mode: overlay;
+}
+#formVentas form {
+  padding: 200px;
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+#formVentas form fieldset {
+  background-color: transparent;
+  border: 2px solid black;
+}
+#formVentas form fieldset legend {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px #ffffff;
+  padding: 10px;
+  font-weight: bolder;
+}
+#formVentas form div {
+  padding: 10px;
+}
+#formVentas form div.selectDiv label {
+  margin-right: 10px;
+}
+#formVentas form div.selectDiv select {
+  padding: 5px;
+}
+#formVentas form input, #formVentas form label {
+  width: 400px;
+}
+#formVentas .txtArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+main#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main#content table#dailies, main#content tr, main#content td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+main#content table#dailies {
+  background-color: rgba(160, 160, 160, 0.3843137255);
+}
+main#content table#dailies:has(a.editEntry) img {
+  width: 40px;
+}
+main#content table#dailies:has(a.deleteEntry) img {
+  width: 40px;
+}
+main#content div#editModal {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 * {
@@ -981,7 +1056,6 @@ section#hero button {
     color: white;
   }
   section#caracteristicas {
-    height: 100vh;
     background-image: url(imgCss/Marketing.jpg);
     background-repeat: no-repeat;
     background-size: auto;

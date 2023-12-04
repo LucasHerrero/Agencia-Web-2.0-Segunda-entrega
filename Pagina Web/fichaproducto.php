@@ -2,7 +2,7 @@
 
 
 
-
+<!--
 
     <section id="nuestros-programas">
         <div class="container">
@@ -63,6 +63,7 @@
             </div>
         </div>
     </section>
+ -->
     <section id="comparative-table">
 <div class="Table">
 
@@ -131,10 +132,17 @@
         <tr class="precio">
         <td class="titcol">Precio</td>
         
-            <td class="basico">9.99€ /mes <span>por mes</span> <button class="BtnCompraFinal">¡ Compra aquí !</button></td>
-            <td class="medio">19.99€ /mes <span>por mes</span><button class="BtnCompraFinal">¡ Compra aquí !</button></td>
-            <td class="premiun">59.99€ /mes <span>por mes</span> <button class="BtnCompraFinal">¡ Compra aquí !</button></td>
+            <td class="basico">9.99€ /mes <span>por mes</span> <a href="formulario_compra.php"><button class="BtnCompraFinal">¡ Compra aquí !</button></a></td>
+            <td class="medio">19.99€ /mes <span>por mes</span><a href="formulario_compra.php"><button class="BtnCompraFinal">¡ Compra aquí !</button></a></td>
+            <td class="premiun">59.99€ /mes <span>por mes</span> <a href="formulario_compra.php"><button class="BtnCompraFinal">¡ Compra aquí !</button></a></td>
              
+        </tr>
+        <tr>
+            <td class="titcol">Disponibilidad</td>
+           <td class="basico">Quedan <span>2 DISPONIBLES!</span></td>
+           <td class="medio">Quedan <span>1 DISPONIBLE!</span></td>
+           <td class="premiun">Quedan <span>1 DISPONIBLE!</span></td>
+            
         </tr>
     </table>
 </div>

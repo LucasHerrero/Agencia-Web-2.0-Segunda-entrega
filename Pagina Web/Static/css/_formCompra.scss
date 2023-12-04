@@ -1,0 +1,68 @@
+@use "vars";
+#formVentas{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: start;
+
+height: 120vh;
+background-image: url(imgCss/Marketing.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: center;
+background-attachment: fixed;
+background-color: #484747;
+background-blend-mode: overlay;
+    form{
+
+        fieldset{
+            background-color: transparent;
+            border: 2px solid black;
+           
+         legend{
+            font-size: 20px;
+            text-shadow: 2px 2px 4px #ffffff;
+            padding: 10px;
+            font-weight: bolder;
+         }
+        }
+        padding: 200px;
+        min-width: 800px;
+        display: flex;
+        justify-content: center;
+        
+            div{
+                padding: 10px;
+            }
+
+          div.selectDiv{
+            label {
+                margin-right: 10px;
+            }
+            select{
+                padding: 5px;
+            }
+          }
+
+
+        input,label{
+            width: 400px;
+
+        }
+      
+    }
+
+.txtArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+
+
+
+
+}

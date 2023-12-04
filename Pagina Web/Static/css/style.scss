@@ -7,7 +7,8 @@
 @use "contactanos";
 @use "register";
 @use "offcanvas";
-
+@use "formCompra";
+@use "panAdmin";
 
 * {
     --outline: 1px solid red;
@@ -277,7 +278,7 @@ h2{padding: 20px 20px;
   
 
    section#caracteristicas{
-        height: 100vh;
+    
         background-image: url(imgCss/Marketing.jpg);
         background-repeat: no-repeat;
         background-size: auto;

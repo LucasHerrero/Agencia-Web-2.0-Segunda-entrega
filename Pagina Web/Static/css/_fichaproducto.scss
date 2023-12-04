@@ -212,18 +212,31 @@ text-align: center;
     .titcol{
         background-image: linear-gradient(120deg, #000000, #6517ca);
         color: white;
+        span{
+            color: #ffea00;
+        }
     }
+  
     .basico{
         background-image: linear-gradient(120deg, #6517ca, #6a4b92);
         color: white;
+        span{
+            color: #ffea00;
+        }
     }
     .medio{
         background-image: linear-gradient(120deg, rgb(12, 181, 88), #6a4b92);
         color: white;
+        span{
+            color: #ffea00;
+        }
     }
     .premiun{
         background-image: linear-gradient(120deg, #ffea00, #6a4b92);
         color: white;
+        span{
+            color: #ffea00;
+        }
     }
     tr.precio{
 height: 200px;
